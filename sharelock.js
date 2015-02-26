@@ -1,12 +1,14 @@
 var request = require('request');
-var _ = require('lodash');
+var ld = require('lodash');
 var validUrl = require('valid-url');
 
-function Sharelock (url) {
-	if (validUrl.isUri(url)) {
-		this.url = url;
+function Sharelock (uri) {
+	if (!uri) {
+		this.uri = 'https://sharelock.io';
+	} else if (validUrl.isUri(uri)) {
+		this.url = uri;
 	} else {
-		throw 'Invalid Sharelock URL specified: ' + url;
+		throw 'Invalid Sharelock URI specified: ' + uri;
 	}
 }
 
