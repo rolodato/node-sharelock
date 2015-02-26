@@ -2,6 +2,11 @@
   "name": "sharelock-client",
   "version": "0.0.0",
   "description": "Node.js wrapper for https://sharelock.io",
+  "homepage": "https://sharelock.io",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rolodato/node-sharelock.git"
+  },
   "bin": {
     "sharelock": "./index.js"
   },
