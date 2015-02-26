@@ -1,7 +1,7 @@
 {
-  "name": "sharelock-node",
+  "name": "sharelock-client",
   "version": "0.0.0",
-  "description": "Sharelock.io Node.js client",
+  "description": "Node.js wrapper for https://sharelock.io",
   "bin": {
     "sharelock": "./index.js"
   },
