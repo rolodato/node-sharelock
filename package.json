@@ -11,7 +11,6 @@
   "author": "Rodrigo López Dato",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^3.3.1",
     "request": "^2.53.0",
     "valid-url": "^1.0.9"
   }

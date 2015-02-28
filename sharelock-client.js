@@ -1,5 +1,4 @@
 var request = require('request');
-var ld = require('lodash');
 var validUrl = require('valid-url');
 
 function Sharelock (uri) {
@@ -39,7 +38,7 @@ Sharelock.prototype.create = function (secret, acl, cb) {
 function parseAcl(acl) {
 	if (acl.constructor === Array && acl.length > 0) {
 		return acl.join(',');
-	} else if (ld.isString(acl)) {
+	} else if (typeof acl === 'string') {
 		return acl;
 	} else {
 		throw 'Invalid recipient list (ACL) specified: ' + acl;
