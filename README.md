@@ -1,3 +1,5 @@
+# node-sharelock
+
 A simple Node.js wrapper for [Sharelock](https://sharelock.io).
 
 ```js
@@ -7,11 +9,11 @@ var sharelock = require('sharelock-client').init();
 // Custom instance
 var mySharelock = require('sharelock-client').init('https://example.com/sharelock');
 
-var cb = function (err, url) {
+function cb (err, url) {
   console.log(url);
 };
 
-sharelock.create('super secret', 'john@example.com', cb);
+sharelock.create('super secret', 'alice@example.com', cb);
 
-sharelock.create('more secrets', ['jack@example.com', '@twitter'], cb);
+sharelock.create('more secrets', ['bob@example.com', '@carol'], cb);
 ```
